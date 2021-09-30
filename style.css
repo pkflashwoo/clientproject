@@ -1,0 +1,249 @@
+.hero-bg{
+height: 100vh;
+background-image: url(./image/bg.jpeg);
+margin-left: 280px;
+background-size: cover;
+
+
+}
+
+.slidebar{
+  float: left;
+  z-index: 2;
+  width: 25wh;
+  position:fixed;
+}
+.btn-slider{
+  display: none;
+}
+#smol-nav{
+  display: none;
+  
+}
+@media screen and (max-width: 900px) {
+  #smol-nav{
+    display:flex;
+    color: white;
+  background-color: #212529;
+  }
+	.slidebar{ display: none; }
+  .hero-bg{
+    height: 100vh;
+    background-image: url(./image/bg.jpeg);
+    margin-left:0px;
+    background-size: cover;
+  background-blend-mode: difference;
+  opacity: 1;
+  
+    }
+    .btn-slider{
+      display: block;
+      background-color: #5c7aa1; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+      #shmenulinks {
+      display: block;
+      }
+      #slidebar {
+      display: none;
+      }
+      #text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 37vh;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .about{
+        margin-left: 0px !important;
+      }
+      .facts{
+        margin-left: 0px !important;
+      }
+      .skills-section-bg{
+        margin-left: 0px !important;
+      }
+      .portfolio{
+        margin-left: 0px !important;
+      }
+      .contact{
+        margin-left: 0px !important;
+        
+      }
+      #form-message{
+        margin-right: 0%;
+        width: 100% !important;
+        margin-left: 4%;
+        box-shadow: -4px -9px 27px grey;
+      }
+
+}
+#shemulinks{
+  background-color: aqua;
+}
+#container {
+	text-align: center;
+  background-color: transparent;
+  display: block;
+
+  overflow: hidden;
+  
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	letter-spacing: 2px;
+  margin-top: 7vh;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: white;
+	animation: blink .75s step-end infinite;
+  margin-top: 7vh;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color:white; 
+	}
+}
+.nav-item{
+  transition: 0.4s;
+
+}
+.nav-item:hover{
+  background-color: gray;
+  border-radius: 14px;
+  transition-property: initial;
+
+}
+.about{
+  display: block;
+  margin-top: 5%;
+  margin-left: 280px;
+}
+.facts{
+  display: block;
+  margin-top: 5%;
+  margin-left: 280px;
+  background-color:#f5f8fd ;
+}
+.skills-section-bg{
+  display: block;
+  margin-top: 5%;
+  margin-left: 280px;
+  margin-bottom: 5%;
+}
+.all-skill{
+  display: flex;
+}
+.portfolio{
+  display: block;
+  margin-top: 5%;
+  margin-left: 280px;
+  margin-bottom: 5%;
+  background-color: #f5f8fd;
+}
+.galary-row{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.coloumn {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.galary-img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.4s;
+}
+.contact{
+  display: block;
+  margin-top: 5%;
+  margin-left: 280px;
+  margin-bottom: 5%;
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .coloumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .coloumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.galary-img:hover{
+  transform:scale(1.1);
+  transition-duration: 0.2s;
+  filter: grayscale(40%);
+  cursor: pointer;
+  z-index: 44;
+  overflow-x: visible;
+}
+.section-title h2{
+  text-decoration: underline;
+  text-decoration-color: #5c7aa1;
+  color: #2f294b;
+  margin-bottom: 0%;
+}
+.section-title-portfolio{
+  text-decoration: underline;
+  text-decoration-color: #5c7aa1;
+  color: #2f294b;
+}
+#form-message{
+  
+  margin-right: 0%;
+  width: 56%;
+  margin-left: 0%;
+ transition: 0.3s;
+}
+#form-message:hover{
+  box-shadow: -4px -9px 27px grey;
+  border-radius: 4%;
+  transform: scale(1.05);
+}
+#about-img{
+  transition: 0.3s;
+}
+#about-img:hover{
+  transform: scale(1.05);
+}
+
